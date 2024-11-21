@@ -2,8 +2,6 @@
 
 #include "../../Util/Util.h"
 
-class C_DODPlayer;
-
 namespace G
 {
 	inline Module_t Server;
@@ -13,8 +11,6 @@ namespace G
 	inline Module_t MaterialSystem;
 	inline Module_t Vstdlib;
 	inline Module_t Vgui;
-
-	inline C_DODPlayer* Player;
 
 	inline HWND Window;
 
