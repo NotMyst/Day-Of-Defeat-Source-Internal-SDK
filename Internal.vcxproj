@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{cb7b979f-8bbc-415a-a21c-7526814b09e0}</ProjectGuid>
+    <RootNamespace>Internal</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>dod_sdk</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>dod_sdk</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>dod_sdk</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>dod_sdk</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Base\DOD\DOD.cpp" />
+    <ClCompile Include="Base\Globals\Globals.cpp" />
+    <ClCompile Include="Base\Netvar\Netvar.cpp" />
+    <ClCompile Include="Base\Offsets\Offsets.cpp" />
+    <ClCompile Include="Base\SDK\checksum_md5.cpp" />
+    <ClCompile Include="Base\SDK\Handle.cpp" />
+    <ClCompile Include="Base\SDK\SDK.cpp" />
+    <ClCompile Include="DllMain.cpp" />
+    <ClCompile Include="Cheat\Features\Movement\Movement.cpp" />
+    <ClCompile Include="Cheat\Hooks\C_BasePlayer\C_BasePlayer.cpp" />
+    <ClCompile Include="Cheat\Hooks\Hooks.cpp" />
+    <ClCompile Include="Cheat\Hooks\IBaseClientDLL\IBaseClientDLL.cpp" />
+    <ClCompile Include="Cheat\Hooks\IClientMode\IClientMode.cpp" />
+    <ClCompile Include="Cheat\Hooks\IMatSystemSurface\IMatSystemSurface.cpp" />
+    <ClCompile Include="Cheat\Hooks\IPrediction\IPrediction.cpp" />
+    <ClCompile Include="Cheat\Hooks\IVModelRender\IVModelRender.cpp" />
+    <ClCompile Include="Cheat\Cheat.cpp" />
+    <ClCompile Include="Util\Hook\minhook\buffer.c" />
+    <ClCompile Include="Util\Hook\minhook\hde\hde32.c" />
+    <ClCompile Include="Util\Hook\minhook\hde\hde64.c" />
+    <ClCompile Include="Util\Hook\minhook\hook.c" />
+    <ClCompile Include="Util\Hook\minhook\trampoline.c" />
+    <ClCompile Include="Util\Math\Math.cpp" />
+    <ClCompile Include="Util\Pattern\Pattern.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base\Base.h" />
+    <ClInclude Include="Base\DOD\DOD.h" />
+    <ClInclude Include="Base\Globals\Globals.h" />
+    <ClInclude Include="Base\Netvar\Netvar.h" />
+    <ClInclude Include="Base\Offsets\Offsets.h" />
+    <ClInclude Include="Base\SDK\buttoncode.h" />
+    <ClInclude Include="Base\SDK\CGameEventListener.h" />
+    <ClInclude Include="Base\SDK\CGlobalVarsBase.h" />
+    <ClInclude Include="Base\SDK\checksum_md5.h" />
+    <ClInclude Include="Base\SDK\ClientClass.h" />
+    <ClInclude Include="Base\SDK\Color.h" />
+    <ClInclude Include="Base\SDK\Const.h" />
+    <ClInclude Include="Base\SDK\CSteamID.h" />
+    <ClInclude Include="Base\SDK\CUserCmd.h" />
+    <ClInclude Include="Base\SDK\CViewSetup.h" />
+    <ClInclude Include="Base\SDK\C_BaseAnimating.h" />
+    <ClInclude Include="Base\SDK\C_BaseCombatCharacter.h" />
+    <ClInclude Include="Base\SDK\C_BaseCombatWeapon.h" />
+    <ClInclude Include="Base\SDK\C_BaseEntity.h" />
+    <ClInclude Include="Base\SDK\C_BaseFlex.h" />
+    <ClInclude Include="Base\SDK\C_BasePlayer.h" />
+    <ClInclude Include="Base\SDK\C_BaseViewmodel.h" />
+    <ClInclude Include="Base\SDK\C_DODGameRules.h" />
+    <ClInclude Include="Base\SDK\C_DODPlayer.h" />
+    <ClInclude Include="Base\SDK\C_DODTeam.h" />
+    <ClInclude Include="Base\SDK\C_Team.h" />
+    <ClInclude Include="Base\SDK\C_WeaponDODBase.h" />
+    <ClInclude Include="Base\SDK\C_WeaponDODBaseGrenade.h" />
+    <ClInclude Include="Base\SDK\dt_common.h" />
+    <ClInclude Include="Base\SDK\dt_recv.h" />
+    <ClInclude Include="Base\SDK\Handle.h" />
+    <ClInclude Include="Base\SDK\IClientEntity.h" />
+    <ClInclude Include="Base\SDK\IClientNetworkable.h" />
+    <ClInclude Include="Base\SDK\IClientRenderable.h" />
+    <ClInclude Include="Base\SDK\IClientThinkable.h" />
+    <ClInclude Include="Base\SDK\IClientUnknown.h" />
+    <ClInclude Include="Base\SDK\interface.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IBaseClientDLL.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IClientEntityList.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IClientMode.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IEngineTrace.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IEngineVGui.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IGameMovement.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IMaterialSystem.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IMatSystemSurface.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IMoveHelper.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IPanel.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IPlayerInfoManager.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IPrediction.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IStudioRender.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IUniformRandomStream.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IVDebugOverlay.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IVEngineClient.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IVModelRender.h" />
+    <ClInclude Include="Base\SDK\IMaterial.h" />
+    <ClInclude Include="Base\SDK\Interfaces\IVRenderView.h" />
+    <ClInclude Include="Base\SDK\SDK.h" />
+    <ClInclude Include="Base\SDK\Vector.h" />
+    <ClInclude Include="Cheat\Features\Features.h" />
+    <ClInclude Include="Cheat\Features\Movement\Movement.h" />
+    <ClInclude Include="Cheat\Hooks\C_BasePlayer\C_BasePlayer.h" />
+    <ClInclude Include="Cheat\Hooks\Hooks.h" />
+    <ClInclude Include="Cheat\Hooks\IBaseClientDLL\IBaseClientDLL.h" />
+    <ClInclude Include="Cheat\Hooks\IClientMode\IClientMode.h" />
+    <ClInclude Include="Cheat\Hooks\IMatSystemSurface\IMatSystemSurface.h" />
+    <ClInclude Include="Cheat\Hooks\IPrediction\IPrediction.h" />
+    <ClInclude Include="Cheat\Hooks\IVModelRender\IVModelRender.h" />
+    <ClInclude Include="Cheat\Cheat.h" />
+    <ClInclude Include="Util\Hook\Hook.h" />
+    <ClInclude Include="Util\Hook\minhook\buffer.h" />
+    <ClInclude Include="Util\Hook\minhook\hde\hde32.h" />
+    <ClInclude Include="Util\Hook\minhook\hde\hde64.h" />
+    <ClInclude Include="Util\Hook\minhook\hde\pstdint.h" />
+    <ClInclude Include="Util\Hook\minhook\hde\table32.h" />
+    <ClInclude Include="Util\Hook\minhook\hde\table64.h" />
+    <ClInclude Include="Util\Hook\minhook\MinHook.h" />
+    <ClInclude Include="Util\Hook\minhook\trampoline.h" />
+    <ClInclude Include="Util\Math\Math.h" />
+    <ClInclude Include="Util\Memory\Memory.h" />
+    <ClInclude Include="Util\Pattern\Pattern.h" />
+    <ClInclude Include="Util\Util.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
